@@ -1,6 +1,8 @@
 # OpenSourcePackagesCollector
 Pre-build VI collecting packages names, version and licenses/copyright to feed this information into a About.vi (or any target VI)
 
+This example is a pre-build VI to get all of the VIPM packages installed on the machine and extract open-source license copyright files.
+
 ## Demonstration
 [](https://github.com/NeosoftTechnologiesInc/OpenSourcePackagesCollector/assets/149504000/0b98dba9-40c4-4f43-a261-10d90820b914)
 
