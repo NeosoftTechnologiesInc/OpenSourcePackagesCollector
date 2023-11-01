@@ -1,7 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Property Name="NI.Project.Description" Type="Str">This example is a pre-build VI to get all of the VIPM packages installed in the machine and extract open-source license copyright files from .vip which is stored in the machine.</Property>
+	<Property Name="NI.Project.Description" Type="Str">This example is a pre-build VI to get all of the VIPM packages installed on the machine and extract open-source license copyright files.</Property>
 	<Property Name="ThirdParty.LV.ExampleFinder" Type="Str">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;nidna:ExampleProgram 
     xmlns:nidna="http://www.ni.com/Schemas/DNA/1.0" 
@@ -18,8 +18,8 @@
 &lt;Keywords&gt;
 	&lt;Item&gt;pre-build&lt;/Item&gt;
 	&lt;Item&gt;open-source&lt;/Item&gt;
-	&lt;Item&gt;package&lt;/Item&gt;
 	&lt;Item&gt;vip&lt;/Item&gt;
+	&lt;Item&gt;package&lt;/Item&gt;
 	&lt;Item&gt;copyright&lt;/Item&gt;
 	&lt;Item&gt;license&lt;/Item&gt;
 &lt;/Keywords&gt;
@@ -46,6 +46,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Example" Type="Folder">
+			<Item Name="Pre-Build Action Example.vi" Type="VI" URL="../examples/Neosoft Technologies/Open Source Package License Collector/Pre-Build Action Example.vi"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Get Toolkit Used List.vi" Type="VI" URL="../SubVIs/Get Toolkit Used List.vi"/>
 		</Item>
@@ -175,44 +178,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="My Application" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{E1A9BFBB-6E11-4D14-A04E-BE6CF35C5F6F}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{CA0703CA-DF49-4B4E-ACB5-4E65DC1C1AAF}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{1E027891-786E-4A2E-9D74-CB5EE2627263}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_preActionVIID" Type="Ref"></Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{9A775A3A-01DD-4CF3-B83F-AD7FEA47FB56}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/Application.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{13EE17E8-0518-4BF0-AADE-99EDB5DE70E3}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
-				<Property Name="TgtF_companyName" Type="Str">Neosoft Technologies Inc.</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">My Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">My Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 Neosoft Technologies Inc.</Property>
-				<Property Name="TgtF_productName" Type="Str">My Application</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{146EDD4D-C139-4F00-ABE1-67F62A8A2749}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
