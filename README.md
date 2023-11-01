@@ -17,5 +17,5 @@ or change the string constant in the block diagram to make it the same as the co
 3. (#TODO3) Replace the included control/indicator with your original control/indicator if you're using the pre-built VI template 
 3. Set this VI as Pre Build in the project Build Specifications Properties (Pre/Post Build Actions -> Execute VI before build)
 
-## NI Example
+## NI Example (keyword: pre-build, open-source, vip, package, copyright, license)
 ![ni example](https://github.com/NeosoftTechnologiesInc/OpenSourcePackagesCollector/assets/149504000/8a5cbe0b-e284-47e5-b76f-09be31b515a6)
